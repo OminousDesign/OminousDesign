@@ -1,0 +1,485 @@
+/*Note from maker: you must be thinking, 'WAIT THIS SHITTER MADE THIS? NO SHOT, ITS SO SEXY :OMFG: UNLIKE HIM". Yes i did im ultragiga chad halal mutton cutter 2000 B)*/
+
+
+@import url(https://envyxyz.github.io/removal/removal.css); /*sick cunt envy-ing your nuts*/
+@font-face {
+    font-family: gamefont;
+    src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_c5H3gnD_g.woff2);
+}
+
+/*accents and shid*/
+:root {
+	--accent-color: #6603fc;
+	--health-color: #f8f4fe;
+	--ammo-color: #f8f4fe;
+	--premium-color: #fbffa9;
+	--verified-color: #91dcff;
+	
+}
+
+
+/*loadering*/
+
+/*#loadInfoLHolder, #loadGamNm, #loadInfoRHolder {
+    display: none;
+}*/
+
+#loadHeader {
+    content:url(https://cdn.discordapp.com/attachments/815220752231170069/893764607192203304/logo_1.png) !Important;
+}
+
+#initLoader {
+    background-color:transparent;
+    background-image:url(https://cdn.discordapp.com/attachments/830864916071579708/892462779171213332/Ominous_Cyber.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+
+}
+
+
+.lC-cube {
+    display: none !important
+}
+
+#lC-cont::after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    border: 10.5px outset #6603fc;
+    border-radius: 50%;
+    animation: loadering 2.5s linear infinite;
+}
+
+@keyframes loadering {
+    0% {
+        transform: rotate(0);
+    }
+     50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*end*/
+
+    
+/*SPECIALLY FOR INGAME
+#instructionHolder,
+#fullMenHider{
+    display: none!important
+}
+
+#inGameUI{
+    display: block!important;
+}
+*/
+
+
+
+
+/*MAIN MENU*/
+#gameNameHolder::hover #mainLogo {
+}
+
+#mainLogo {
+    content:url(https://cdn.discordapp.com/attachments/815220752231170069/893764607192203304/logo_1.png);
+    filter: drop-shadow(0px 3px 8px #0000003b);
+}
+
+#gameNameHolder {
+    pointer-events: all;
+    font-size: 0;
+    color: transparent;
+    transition: 0.5s;
+}
+#gameNameHolder:hover {
+    font-size: 36px;
+    color: #fff;
+}
+
+#gameNameHolder::after {
+    content: "Css by Ominous#7633";
+    text-shadow: 5px 0 #6603fc;
+    display: grid;
+    align-items: end;
+    position: relative;
+    top: 30px;
+}
+
+#instructions {
+    visibility: hidden
+}
+
+#instructions::after{
+    visibility: visible;
+    content: 'CLICK FOR AUTISM';
+position: absolute;
+    top: 80%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+    color: rgba(255,255,255,.8);
+    font-size: 32px;
+    animation: grow .8s infinite alternate;
+    white-space: nowrap;
+}
+
+
+
+/*button editoring*/
+
+.button, .button:hover {
+    background-color: #00000082 !important;
+    box-shadow: 0px 3px #6603fc!important;
+    filter: drop-shadow(2px 0px 5px  #6603fc78);
+    border-radius: 24px 3px!important;
+}
+/*side ke icons*/
+
+.material-icons-outlined {
+    color: #fff !important;
+    filter:drop-shadow(0px 4px 0px #6603fc);
+    font-size: 320%!important;
+}
+/*end*/
+
+/*side ke icons ka dabba*/
+
+#menuItemContainer {
+    position: fixed;
+    left: 10px;
+    top: 100px;
+    bottom: 50px;
+    width: 110px;
+    display: flex;
+    flex-direction: column;
+    background: rgb(0 0 0 / 30%);
+    border-radius: 100px 3px;
+    filter: drop-shadow(5px 0px 0px #6603fc) ;
+   
+}
+
+
+
+/*end*/
+
+.menuItem .menuItemTitle {
+    display: none;
+    margin-top: -60%;
+    color: #fff;
+    font-size: 18px !important;
+}
+
+/*login button*/
+#signedOutHeaderBar {
+    background-color: transparent;
+    padding-left: 10px;
+    padding-right: 6px;
+}
+
+/*ping and fps ka menu*/
+.headerBarRight {
+    right: 0;
+    margin-inline: 10px;
+    margin-top: 10px;
+    padding-top: 0px;
+    padding-left: 10px;
+    border-radius: 36px 3px;
+    align-items: center;
+   background-color: #00000082 !important;
+    box-shadow: 0px 3px #6603fc!important;
+    filter: drop-shadow(2px 0px 5px #6603fc78);
+    
+
+}
+#menuPingDisplay .material-icons {
+    color: #fff !important;
+    vertical-align: middle;
+    font-size: 15px;
+}
+    span#menuFPS {
+    color: #fff !important;
+    text-shadow: 3px 1px #6603fc;
+}
+        
+        
+  #ingameFPS {
+    color: #fff !important;
+     filter: drop-shadow(2px 0px 0px var(--accent-color))
+}
+
+#pingIcon {
+    color: white !important;
+    white-space: nowrap;
+    filter: drop-shadow(2px 0px 0px var(--accent-color));
+    font-size: 24px !important;
+    vertical-align: middle !important;
+}
+
+/*end*/
+
+
+
+/*progress-bar*/
+
+.progressBarInner {
+    height: 100%;
+    background-image: linear-gradient(to right,#6603fc,#a900ff,94%,#d670ff);
+    transition: width 1s ease-in-out;
+    border-radius: 36px;
+}
+
+.progressBar {
+    border-radius: 36px;
+    background-color: #181818;
+    filter: drop-shadow(2px 2px #000);
+}    
+
+/*end*/
+
+/*faceitrankl*/
+.rankClck {
+    content: url(https://cdn.discordapp.com/attachments/830864916071579708/893839144806154240/New_Project_1.png);
+}
+/*end*/
+
+
+/*spectatebutton*/
+
+.sliderSml {
+    background-color: transparent;
+    transform: translateX(-50%);
+}
+.sliderSml:before {
+    font-family: 'material-icons';
+    content: 'visibility';
+    width: max-content;
+    font-size: 24px;
+    left: 50%;
+    background-color: transparent;
+    color: white;
+    transform: scale(150%);
+    image-rendering: high-quality;
+    text-shadow: 2px 1px #6603fc
+}
+#uiBase.onMenu #spectButton span[style="font-size:15px;color:rgba(255,255,255,0.6)"] {
+    display: none;
+}
+input:checked+.sliderSml {
+    background-color: transparent;
+}
+input:checked+.sliderSml:before {
+    font-family: 'material-icons';
+    content: 'visibility_off';
+    transform:  scale(150%) translateX(0px);
+     text-shadow: 2px 1px #6603fc
+}
+
+/*end*/
+
+/*ingame-shid*/
+
+/*health and ammo*/
+
+#ammoMax,#ammoIcon,#healthBar,#challIcon,#maxHP,#hudClassIcon {
+    display:none;
+}
+#ammoVal, #healthValue{
+    filter:drop-shadow(5px 0px 0px #6603fc);
+    font-size: 64px !Important;
+}
+#ammoDisplay {
+    transform:none;
+    border-radius:0;
+    margin:0;
+    padding:0;
+    background-color:transparent;
+    background-image:linear-gradient(to right,#fff,#fff);
+    width:50px;
+    height:4px;
+    position:fixed;
+    left:calc(50% - 30px);
+    top:calc(50% + 30px);
+}
+
+#ammoVal {
+    position:fixed;
+    right:30%;
+    bottom:25%;
+    font-size:60px;
+    color: var(--ammo-color);
+}
+
+#healthValueHolder{
+    background-color:transparent;
+    margin:0;
+    padding:0;
+    border-radius:0;
+    position:fixed;
+    left:30%;
+    bottom:25%;
+}
+
+#healthValue {
+    color:var(--health-color);
+    font-size:60px;
+}
+/*end*/
+
+/*timer*/
+#timerDisplay {
+    text-align: center;
+    position: fixed;
+    transform: translateX(-50%);
+    top:2%;
+    left: 50%;
+    width: 100px;
+    height: 35px;
+    background-color: var(--ingame-bg-color);
+    will-change: unset;
+}
+
+#timerVal {
+    font-size: 25px;
+    text-shadow: 5px 0px var(--accent-color) !important;
+    padding: 0;
+    will-change: unset;
+}
+
+#timerIcon {
+    display: none;
+}
+
+#timerDisplay {
+	width: 240px;
+	height: 80px;
+	background-color: #0000;
+	will-change: unset;
+}
+
+#timerVal {
+	font-size: 64px;
+	padding-left: 0;
+	will-change: unset;
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+
+/*ping and fps*/
+#pingDisplay, #fpsDisplay, #ingressDisplay, #egressDisplay {
+    font-size: 18px;
+    vertical-align: top;
+    color: rgb(255 255 255);
+}
+
+
+
+/*reload message*/
+#reloadMsg {
+    bottom: calc(50% - 200px);
+    right: 200px!important;
+    background-color: transparent !important;
+    border: none;
+    color: var(--ammo-color);
+    filter: drop-shadow(5px 0px 0px #6603ff);
+    font-family: 'Material Icons';
+    font-size: 0;
+    animation: breathe 1s infinite alternate;
+}
+
+#reloadMsg::before {
+    content: "report_problem";
+    font-size: 64px;
+}
+/*end*/
+
+
+ 
+/*weaponicons*/
+#weapDisplay {
+    bottom: 20%;
+    right: 48%;
+}
+
+.weapItem {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+.weapIcon[style*="1"] {
+    opacity: 1 !important;
+    height: 70px;
+}
+
+
+#weapIconMel {
+    margin: 0 !important;
+}
+
+.weapKey {
+    display: none;
+}
+
+
+.weapIcon {
+    filter: brightness(1) drop-shadow(5px 0px 1px #6603fc);
+    font-size: 80px;
+    opacity: 0 !important;
+    transition-duration: 0.25s;
+    height: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*credit thingo*/
+
+#loadInfoRHolder {
+    color: #fff;
+    font-size: 0;
+    background-color: #000;
+    padding: 4px 8px;
+    box-shadow: 4px 4px var(--accent);
+}
+
+#loadInfoRHolder::after {
+    content: "Aur kya dekhna hai lodo?";
+    font-size: 20px;
+}
+
+#loadTipsHolder {
+    color: #fff;
+    font-size: 0;
+}
+
+#loadTipsHolder::before {
+    content: "Quit the game please";
+    display: block;
+    font-size: 48px;
+    text-shadow: 4px 2px #6603fc;
+}
+
+#loadTipsHolder::after {
+    content: "twitter: @ominouskr  discord: ominous#7633  :)";
+    text-shadow: 4px 2px #6603fc;
+    font-size: 24px;
+}
+
+
+
+
+
+
+
